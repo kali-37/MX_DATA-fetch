@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Import File</title>
+	<style>
+		       
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #f2f2f2;
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+			width: 50%;
+			max-width: 600px;
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 30px;
+		}
+		label {
+			font-size: 18px;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type="file"] {
+			margin-bottom: 20px;
+		}
+		.error {
+			color: red;
+			font-size: 18px;
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		.success {
+			color: green;
+			font-size: 18px;
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+    .green-file-input {
+      color: green;
+    }
+    .search-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .search-input {
+      font-size: 16px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+    }
+    .search-button {
+      font-size: 16px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+	.header {
+		position: relative;
+		height: 50px;
+	  }
+	  
+	  .logout {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: red;
+		color: white;
+		padding: 10px;
+		border-radius: 5px;
+		text-decoration: none;
+	  }
+	  
+	</style>
+</head>
+<body>
+	<div class="header">
+		<a href="{% url 'logout' %}" class="logout">Logout</a>
+	  </div>
+	  
+	<div class="container">
+		<form method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			<h1>Import File</h1>
+			{% if error %}
+				<p class="error">{{ error }}</p>
+			{% endif %}
+			{% if success %}
+				<p class="success">File imported successfully!</p>
+			{% endif %}
+			<label>Select file to import:</label>
+			<input type="file" name="file" accept=".csv, .xlsx" class="green-file-input">
+      <span id="file-label">No file chosen</span>
+			<button type="submit">Import</button>
+		</form>
+
+		{% if success %}
+		<p><span style="color: blue">{{ total_number_of_data_tried_to_input }}</span> <i>data records were attempted to be imported.</i></p>
+		<p><span style="color: blue">{{ dropped }}</span> <i>data duplicate and empty records were found on provided file.</i></p>
+
+		<p><span style="color: red">{{ total_duplicate_found }}</span> <i>duplicate records were found in database already  and skipped.</i></p>
+		<p><span style="color: green">{{ total_updated }}</span><i> new records were imported successfully.</i></p>
+		<hr>
+		<h3>Imported Data:</h3>
+		{{ html_table|safe }}
+	{% endif %}
+
+	</div>
+  
+</body>
+</html>

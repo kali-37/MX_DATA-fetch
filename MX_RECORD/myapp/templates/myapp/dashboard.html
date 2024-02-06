@@ -1,0 +1,13 @@
+      <div class="dashboard-box">
+        <h2>Dashboard</h2>
+        <!-- Place your dashboard content here -->
+        <p>Total Amount of MX Data: <span style="color: blue;">{{ dashboard_data.total_amount_of_mx_data }}</span></p>
+        <p>Total Amount of Unverified Data: <span style="color: green;">{{ dashboard_data.total_amount_of_unverified_data }}</span></p>
+        <p>Total number of Domain that were Not alive: <span style="color: red;">{{ dashboard_data.total_domain_not_live }}</span></p>
+        <p>Total number of Domain found alive  but mx was not found: <span style="color: orange;">{{ dashboard_data.total_domain_live_with_no_MX }}</span></p>
+        
+        <a href="{% url 'logout' %}" class="logout">Logout</a>
+        <a href="{% url 'delete' %}" class="delete">Delete</a>
+        <a href="{% url 'logout' %}" class="logout">Logout</a>
+        <a href="{% url 'delete' %}" class="delete">DATABASE Delete Section</a>
+      </div>

@@ -1,0 +1,152 @@
+<html>
+<head>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav form {
+            display: flex;
+            align-items: center;
+        }
+
+        nav input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        nav button[type="submit"] {
+            padding: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        nav button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        
+        .delete-section {
+            margin-bottom: 20px;
+        }
+
+        .delete-section h3 {
+            color: #333;
+        }
+
+        .delete-section p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .delete-section input[type="submit"] {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+
+        .delete-section input[type="submit"]:hover {
+            background-color: #c82333;
+        }
+
+        .message {
+            color: #dc3545;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .go-back-section {
+            margin-top: 20px;
+        }
+
+        .go-back-section a {
+            color: #333;
+            text-decoration: none;
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: 1px solid #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-back-section a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dashboard-box {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            width: 50%;
+            height: 35vh;
+            background-color: #EAF6FF; /* Light blue background color */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            font-family: 'Arial', sans-serif; /* Change the font family */
+          }
+
+    </style>
+</head>
+
+<body>
+    <form class="delete-section" method="POST" action="{% url 'delete_all_unverified_data' %}">
+        {% csrf_token %}
+        <h3>Delete All NEW Unverified Data</h3>
+        <p>Are you sure you want to delete all new unverified data?</p>
+        <p> It contains New imported data which has't gone through API check process yet. </p>
+        <input type="submit" value="Delete" class="btn btn-danger">
+    </form>
+
+    <form class="delete-section" method="POST" action="{% url 'delete_all_domain_not_live_data' %}">
+        {% csrf_token %}
+        <h3>Delete All Domain Not Live Data from Unverified Database</h3>
+        <p>Are you sure you want to delete all domain not live data from the unverified database?</p>
+        <input type="submit" value="Delete" class="btn btn-danger">
+    </form>
+
+    <form class="delete-section" method="POST" action="{% url 'delete_all_domain_live_no_mx_data' %}">
+        {% csrf_token %}
+        <h3>Delete All Domain Live but MX Record Not Found Data from Unverified Database</h3>
+        <p>Are you sure you want to delete all domain live but MX record not found data from the unverified database?</p>
+        <input type="submit" value="Delete" class="btn btn-danger">
+    </form>
+
+    <form class="delete-section" method="POST" action="{% url 'delete_all_verified_data' %}">
+        {% csrf_token %}
+        <h3>Delete All Verified Data from Domain Database</h3>
+        <p>Are you sure you want to delete all verified data from the domain database?</p>
+        <p> Remember This data are those which required API to fetch </p>
+        <p>This action will delete the data from the domain database. Please confirm by typing 'yes' below:</p>
+        <input type="text" name="confirm" placeholder="Type 'yes' to confirm" required>
+        <input type="submit" value="Delete" class="btn btn-danger">
+    </form>
+    <div class="go-back-section">
+        <a href="{% url 'search_results' %}" >Go Back</a>
+        <div class="dashboard-box">
+            <h2>Dashboard</h2>
+            <!-- Place your dashboard content here -->
+            <p>Total Amount of MX Data: <span style="color: blue;">{{ dashboard_data.total_amount_of_mx_data }}</span></p>
+            <p>Total Amount of NEW Unverified Data: <span style="color: green;">{{ dashboard_data.total_amount_of_new_unverified_data }}</span></p>
+            <p>Total number of Domain that were Not alive: <span style="color: red;">{{ dashboard_data.total_domain_not_live }}</span></p>
+            <p>Total number of Domain found alive  but mx was not found: <span style="color: orange;">{{ dashboard_data.total_domain_live_with_no_MX }}</span></p>
+            
+          </div>
+    {% if message %}
+        <p class="message">{{ message }}</p>
+    {% endif %}
+</body>
+</html>

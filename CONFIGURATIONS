@@ -1,0 +1,165 @@
+For Database of MYSQL to be configured :
+	
+	pip install mysqlclient 
+	
+	sudo systemctl start mysql
+
+
+	mysql -u root -p
+
+password for root will be 'root' also possible that root is not created or other users are created .. check that 
+
+MariaDB [(none)]> 	CREATE DATABASE [DATABASE_NAME];
+Query OK, 1 row affected (0.000 sec)
+
+MariaDB [(none)]> 	use [DATABASE_NAME];
+Database changed
+
+
+Replace settings.py with 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '[DATABASE_NAME]',
+        'USER': '[username]',# root as for above case 
+        'PASSWORD': '[password_of_username_above]',# it's also root for my case 
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+
+
+
+
+IF YOU WANT to create new user in mysql database for specifically for this project then : 
+
+
+
+        To create a user in a Linux SQL database, you will need to use the MySQL command-line client.
+
+        Open a terminal window and navigate to the directory where the MySQL binary is located.
+        Run the following command to connect to the MySQL server as the root user:
+        Code snippet
+            mysql -u root -p
+        Use code with caution. Learn more
+        Enter the root user password when prompted.
+        Once you are connected to the MySQL server, run the following command to create a new user:
+        Code snippet
+            CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';  # change username and password section 
+                                                                            for example : CREATE USER   'SQL_MX'@'localhost' IDENTIFIED BY 'password';
+        Use code with caution. Learn more
+        Replace username and password with the username and password of the new user.
+
+        To grant the new user privileges, run the following command:
+        Code snippet
+            GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost';   # change username section to your need 
+
+        Use code with caution. Learn more
+        To exit the MySQL server, run the following command:
+        Code snippet
+            exit;
+        Use code with caution. Learn more
+        The new user will now be able to connect to the MySQL server and access all databases.
+
+        Here are some additional things to keep in mind when creating a user in a Linux SQL database:
+
+        The username must be unique.
+        The password must be at least 8 characters long and contain a mix of uppercase and lowercase letters, numbers, and symbols.
+        The user should only be granted the privileges that they need to perform their job.
+        The user's password should be changed regularly.
+        By following these guidelines, you can help to keep your Linux SQL database secure.
+
+
+
+TO CREATE USER FOR DJANGO PROJECT 
+
+        To create a user in MySQL for a Django project, you can follow these steps:
+
+        Log in to MySQL using a privileged account (e.g. root):
+
+            mysql -u root -p
+        Create a new database for the Django project:
+
+            CREATE DATABASE mydatabase;
+        Replace mydatabase with the desired name for the new database.
+
+        Create a new user with a password:
+
+            CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'mypassword'; # CHANGE USER AND PASSWORD WITH YOUR NEED.
+        Replace myuser and mypassword with the desired values for the new user.
+
+        Grant privileges to the user on the new database:
+        
+            GRANT ALL PRIVILEGES ON mydatabase.* TO 'myuser'@'localhost';
+        This grants all privileges to the user on the mydatabase database. If you want to limit the privileges, you can specify them instead of using ALL PRIVILEGES.
+
+        Flush the privileges to apply the changes:
+            FLUSH PRIVILEGES;
+        That's it! You now have a new database and user in MySQL that you can use for your Django project. Make sure to update your Django settings file with the correct database name, username, and password.
+
+
+
+DATABASE DATA DUMP AND STORE IN JSON FORMAT FOR FUTURE USE : 
+
+WHEN I WANT TO  UPGRADE FROM sqlite to mysql then i need to dump data from sqlite and store it in json format and then load it to mysql database
+ 
+That can easily be done using : 
+    
+        python manage.py dumpdata > db.json  # to store database data into db.json file format .. 
+
+        python manage.py loaddata db.json   # after setting up mysql database in settings.py file
+
+        python manage.py dbshell  # to open mysql shell
+
+        mysql> show tables;  # to show tables in mysql database and all the data will be there in mysql database from sqlite database
+
+---------------NExt condition : then ::: to create db.json dump from db.sqlite3 we have is to do .. 
+            ---------------(CSV_PROJECT) ┌─[kali_37@parrot]─[~/CSV_PROJECT/MX_RECORD]
+            ---------------└──╼ $ls
+            ---------------  db.sqlite3  manage.py  MX_RECORD  myapp  mydatabase.sqlite
+            ---------------(CSV_PROJECT) ┌─[kali_37@parrot]─[~/CSV_PROJECT/MX_RECORD]
+            └──╼ $
+                                    sqlite3 db.sqlite3  # open db.sqlite3 using sqlite3 
+                                    .mode json  # if csv then .mode csv 
+                                    .output db.json # output to db.json file
+                                    .dump # dump data from db.sqlite3 to db.json file
+                                    .exit # exit from sqlite3 shell
+
+                                    cat db.json # to read 
+
+                                    if want to copy to MY SQL database just installed then : 
+                                    python manage.py loaddata db.json
+
+
+# python manage.py loaddata --database=default db.json                             |  if dump using like that stuffs then 
+
+
+# DATABASE for country and states add it very fast from shell  : 
+
+python manage.py shell 
+
+from myapp.models import Country, State
+india = Country.objects.create(country_name='India')
+state_names = [    'Andaman and Nicobar Islands',    'Andhra Pradesh',    'Arunachal Pradesh',    'Assam',    'Bihar',    'Chandigarh',    'Chhattisgarh',    'Dadra and Nagar Haveli and Daman and Diu',    'Delhi',    'Goa',    'Gujarat',    'Haryana',    'Himachal Pradesh',    'Jammu and Kashmir',    'Jharkhand',    'Karnataka',    'Kerala',    'Ladakh',    'Lakshadweep',    'Madhya Pradesh',    'Maharashtra',    'Manipur',    'Meghalaya',    'Mizoram',    'Nagaland',    'Odisha',    'Puducherry',    'Punjab',    'Rajasthan',    'Sikkim',    'Tamil Nadu',    'Telangana',    'Tripura',    'Uttar Pradesh',    'Uttarakhand',    'West Bengal']
+for state_name in state_names:
+    State.objects.create(state_name=state_name, country=india)
+
+
+# same for USA 
+
+from myapp.models import Country, State
+usa = Country.objects.create(country_name='USA')
+state_names = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
+for state_name in state_names:
+    State.objects.create(state_name=state_name, country=usa)
+
+
+
+# Same for China 
+from myapp.models import Country, State
+china = Country.objects.create(country_name='China')
+province_names = ['Anhui', 'Beijing', 'Chongqing', 'Fujian', 'Gansu', 'Guangdong', 'Guangxi', 'Guizhou', 'Hainan', 'Hebei', 'Heilongjiang', 'Henan', 'Hong Kong', 'Hubei', 'Hunan', 'Inner Mongolia', 'Jiangsu', 'Jiangxi', 'Jilin', 'Liaoning', 'Macau', 'Ningxia', 'Qinghai', 'Shaanxi', 'Shandong', 'Shanghai', 'Shanxi', 'Sichuan', 'Tianjin', 'Tibet', 'Xinjiang', 'Yunnan', 'Zhejiang']
+for province_name in province_names:
+    State.objects.create(state_name=province_name, country=china)
+

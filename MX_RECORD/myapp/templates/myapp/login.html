@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+      body {
+        background-color: #1F1F1F;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3em;
+        margin-top: 1em;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      form {
+        display: inline-block;
+        margin-top: 2em;
+        text-align: left;
+        border: 2px solid #fff;
+        padding: 2em;
+        border-radius: 11px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        max-width: 400px;
+        width: 90%;
+        margin: auto;
+      }
+      label {
+        display: block;
+        margin-bottom: 0.5em;
+        font-size: 1.2em;
+        text-align: left;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        border: none;
+        background-color: #2B2B2B;
+        color: #fff;
+        font-size: 1.2em;
+        padding: 0.5em 0.8em;
+        margin-bottom: 0.8em;
+        border-radius: 3px;
+        width: 100%;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        border: none;
+        color: #fff;
+        padding: 0.5em 1em;
+        font-size: 1.2em;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 2em;
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      input[type="submit"]:hover {
+        background-color: #5bc65b;
+      }
+      .error-message {
+        color: #FF0000;
+        font-size: 0.8em;
+        margin-top: 0.5em;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      
+      /* Media Queries */
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 2.5em;
+        }
+        form {
+          padding: 1em;
+          max-width: 300px;
+        }
+        label {
+          font-size: 1em;
+        }
+        input[type="text"],
+        input[type="password"] {
+          font-size: 1em;
+          padding: 0.5em 0.5em;
+        }
+        input[type="submit"] {
+          font-size: 1em;
+          margin-top: 1em;
+          padding: 0.5em 0.8em;
+        }
+      }
+    </style>
+  
+  </head>
+  <body>
+    <h1>Login</h1>
+
+    <form method="post" action="{% url 'login' %}">
+      {% csrf_token %}
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+      <input type="submit" value="Login">
+    </form>
+    {% if form.errors %}
+      <div class="error-message">
+          <p>Invalid Credentials </p>
+      </div>
+      {% endif %}
+  </body>
+</html>
+
+
+
+
+
+
+
+

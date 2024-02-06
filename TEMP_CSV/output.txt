@@ -1,0 +1,1157 @@
+[{'first_seen': '2022-04-28', 'last_seen': '2023-05-14', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'smtp.google.com', 'mx_count': 26463, 'priority': 10}]}, {'first_seen': '2022-04-16', 'last_seen': '2022-04-28', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'smtp.google.com', 'mx_count': 26463, 'priority': 8}, {'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2021-08-04', 'last_seen': '2022-04-16', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2021-07-28', 'last_seen': '2021-08-04', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'smtp.google.com', 'mx_count': 26463, 'priority': 0}, {'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2018-09-05', 'last_seen': '2021-07-28', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2016-12-08', 'last_seen': '2018-08-02', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2016-02-25', 'last_seen': '2016-12-07', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-11-03', 'last_seen': '2016-02-22', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-10-30', 'last_seen': '2015-11-02', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-10-21', 'last_seen': '2015-10-25', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-10-13', 'last_seen': '2015-10-20', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-09-23', 'last_seen': '2015-10-04', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-09-09', 'last_seen': '2015-09-18', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-08-27', 'last_seen': '2015-09-01', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-08-21', 'last_seen': '2015-08-26', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-07-19', 'last_seen': '2015-08-19', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-07-09', 'last_seen': '2015-07-18', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-06-20', 'last_seen': '2015-07-02', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-06-14', 'last_seen': '2015-06-17', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-06-11', 'last_seen': '2015-06-13', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-06-03', 'last_seen': '2015-06-10', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-05-28', 'last_seen': '2015-05-30', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-05-19', 'last_seen': '2015-05-24', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-05-13', 'last_seen': '2015-05-18', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-04-29', 'last_seen': '2015-05-09', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-04-16', 'last_seen': '2015-04-26', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-04-08', 'last_seen': '2015-04-15', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-04-06', 'last_seen': '2015-04-08', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-03-07', 'last_seen': '2015-04-06', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-02-25', 'last_seen': '2015-03-06', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2015-01-29', 'last_seen': '2015-02-23', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-12-11', 'last_seen': '2015-01-28', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-12-04', 'last_seen': '2014-12-10', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-11-30', 'last_seen': '2014-12-03', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-11-27', 'last_seen': '2014-11-29', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-11-25', 'last_seen': '2014-11-27', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}]}, {'first_seen': '2014-11-22', 'last_seen': '2014-11-24', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-11-15', 'last_seen': '2014-11-18', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-11-09', 'last_seen': '2014-11-11', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-11-01', 'last_seen': '2014-11-05', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-10-18', 'last_seen': '2014-10-21', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-10-15', 'last_seen': '2014-10-17', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-10-06', 'last_seen': '2014-10-10', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-09-26', 'last_seen': '2014-09-28', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-09-21', 'last_seen': '2014-09-23', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-09-16', 'last_seen': '2014-09-18', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-08-26', 'last_seen': '2014-08-30', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-08-23', 'last_seen': '2014-08-25', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-08-19', 'last_seen': '2014-08-21', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-08-11', 'last_seen': '2014-08-14', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-07-25', 'last_seen': '2014-07-29', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-07-22', 'last_seen': '2014-07-24', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-07-17', 'last_seen': '2014-07-19', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-07-09', 'last_seen': '2014-07-11', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-07-05', 'last_seen': '2014-07-08', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-06-29', 'last_seen': '2014-07-01', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}]}, {'first_seen': '2014-06-26', 'last_seen': '2014-06-29', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-06-15', 'last_seen': '2014-06-17', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-06-06', 'last_seen': '2014-06-08', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-05-30', 'last_seen': '2014-06-01', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-05-25', 'last_seen': '2014-05-29', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-05-22', 'last_seen': '2014-05-24', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-05-17', 'last_seen': '2014-05-19', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-05-11', 'last_seen': '2014-05-13', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-05-06', 'last_seen': '2014-05-08', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-04-24', 'last_seen': '2014-04-26', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-04-12', 'last_seen': '2014-04-14', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-04-07', 'last_seen': '2014-04-09', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-03-24', 'last_seen': '2014-03-29', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-03-16', 'last_seen': '2014-03-18', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-03-14', 'last_seen': '2014-03-16', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-03-10', 'last_seen': '2014-03-12', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-03-04', 'last_seen': '2014-03-08', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-03-01', 'last_seen': '2014-03-03', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-02-24', 'last_seen': '2014-02-27', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-02-03', 'last_seen': '2014-02-11', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-01-25', 'last_seen': '2014-01-28', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-01-17', 'last_seen': '2014-01-19', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-01-10', 'last_seen': '2014-01-12', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2014-01-04', 'last_seen': '2014-01-06', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-12-30', 'last_seen': '2014-01-01', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-12-26', 'last_seen': '2013-12-28', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-12-23', 'last_seen': '2013-12-25', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-12-15', 'last_seen': '2013-12-17', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-12-12', 'last_seen': '2013-12-14', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-11-20', 'last_seen': '2013-11-27', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-11-14', 'last_seen': '2013-11-16', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-11-08', 'last_seen': '2013-11-10', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-11-05', 'last_seen': '2013-11-07', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-10-30', 'last_seen': '2013-11-02', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-10-14', 'last_seen': '2013-10-16', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-10-03', 'last_seen': '2013-10-06', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-09-24', 'last_seen': '2013-09-26', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-09-18', 'last_seen': '2013-09-22', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-09-13', 'last_seen': '2013-09-16', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-08-28', 'last_seen': '2013-08-30', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-08-17', 'last_seen': '2013-08-20', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-08-08', 'last_seen': '2013-08-11', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-07-31', 'last_seen': '2013-08-04', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}, {'first_seen': '2013-07-19', 'last_seen': '2013-07-21', 'organizations': ['Google LLC'], 'type': 'mx', 'values': [{'host': 'aspmx.l.google.com', 'mx_count': 15207728, 'priority': 10}, {'host': 'alt1.aspmx.l.google.com', 'mx_count': 14980461, 'priority': 20}, {'host': 'alt2.aspmx.l.google.com', 'mx_count': 14907437, 'priority': 30}, {'host': 'alt3.aspmx.l.google.com', 'mx_count': 10715705, 'priority': 40}, {'host': 'alt4.aspmx.l.google.com', 'mx_count': 10656814, 'priority': 50}]}]
+Date range: 2022-04-28 - 2023-05-14
+Organizations: Google LLC
+Host: smtp.google.com
+
+Date range: 2022-04-16 - 2022-04-28
+Organizations: Google LLC
+Host: smtp.google.com
+
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2021-08-04 - 2022-04-16
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2021-07-28 - 2021-08-04
+Organizations: Google LLC
+Host: smtp.google.com
+
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2018-09-05 - 2021-07-28
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2016-12-08 - 2018-08-02
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2016-02-25 - 2016-12-07
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-11-03 - 2016-02-22
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-10-30 - 2015-11-02
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-10-21 - 2015-10-25
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-10-13 - 2015-10-20
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-09-23 - 2015-10-04
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-09-09 - 2015-09-18
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-08-27 - 2015-09-01
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-08-21 - 2015-08-26
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-07-19 - 2015-08-19
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-07-09 - 2015-07-18
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-06-20 - 2015-07-02
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-06-14 - 2015-06-17
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-06-11 - 2015-06-13
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-06-03 - 2015-06-10
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-05-28 - 2015-05-30
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-05-19 - 2015-05-24
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-05-13 - 2015-05-18
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-04-29 - 2015-05-09
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-04-16 - 2015-04-26
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-04-08 - 2015-04-15
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-04-06 - 2015-04-08
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-03-07 - 2015-04-06
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-02-25 - 2015-03-06
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2015-01-29 - 2015-02-23
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-12-11 - 2015-01-28
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-12-04 - 2014-12-10
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-11-30 - 2014-12-03
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-11-27 - 2014-11-29
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-11-25 - 2014-11-27
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Date range: 2014-11-22 - 2014-11-24
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-11-15 - 2014-11-18
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-11-09 - 2014-11-11
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-11-01 - 2014-11-05
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-10-18 - 2014-10-21
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-10-15 - 2014-10-17
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-10-06 - 2014-10-10
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-09-26 - 2014-09-28
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-09-21 - 2014-09-23
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-09-16 - 2014-09-18
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-08-26 - 2014-08-30
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-08-23 - 2014-08-25
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-08-19 - 2014-08-21
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-08-11 - 2014-08-14
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-07-25 - 2014-07-29
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-07-22 - 2014-07-24
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-07-17 - 2014-07-19
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-07-09 - 2014-07-11
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-07-05 - 2014-07-08
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-06-29 - 2014-07-01
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Date range: 2014-06-26 - 2014-06-29
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-06-15 - 2014-06-17
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-06-06 - 2014-06-08
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-05-30 - 2014-06-01
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-05-25 - 2014-05-29
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-05-22 - 2014-05-24
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-05-17 - 2014-05-19
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-05-11 - 2014-05-13
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-05-06 - 2014-05-08
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-04-24 - 2014-04-26
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-04-12 - 2014-04-14
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-04-07 - 2014-04-09
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-03-24 - 2014-03-29
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-03-16 - 2014-03-18
+Organizations: Google LLC
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-03-14 - 2014-03-16
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-03-10 - 2014-03-12
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-03-04 - 2014-03-08
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-03-01 - 2014-03-03
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-02-24 - 2014-02-27
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-02-03 - 2014-02-11
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-01-25 - 2014-01-28
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-01-17 - 2014-01-19
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-01-10 - 2014-01-12
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2014-01-04 - 2014-01-06
+Organizations: Google LLC
+Host: alt1.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-12-30 - 2014-01-01
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-12-26 - 2013-12-28
+Organizations: Google LLC
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-12-23 - 2013-12-25
+Organizations: Google LLC
+Host: alt1.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-12-15 - 2013-12-17
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-12-12 - 2013-12-14
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-11-20 - 2013-11-27
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-11-14 - 2013-11-16
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-11-08 - 2013-11-10
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-11-05 - 2013-11-07
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-10-30 - 2013-11-02
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-10-14 - 2013-10-16
+Organizations: Google LLC
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-10-03 - 2013-10-06
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-09-24 - 2013-09-26
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-09-18 - 2013-09-22
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-09-13 - 2013-09-16
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-08-28 - 2013-08-30
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-08-17 - 2013-08-20
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-08-08 - 2013-08-11
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-07-31 - 2013-08-04
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+
+Date range: 2013-07-19 - 2013-07-21
+Organizations: Google LLC
+Host: aspmx.l.google.com
+
+Host: alt1.aspmx.l.google.com
+
+Host: alt2.aspmx.l.google.com
+
+Host: alt3.aspmx.l.google.com
+
+Host: alt4.aspmx.l.google.com
+

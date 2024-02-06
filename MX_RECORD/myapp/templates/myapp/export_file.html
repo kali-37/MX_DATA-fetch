@@ -1,0 +1,31 @@
+{% extends 'search_results.html' %} 
+
+{% block content %}
+<h1>Data Export</h1>
+{% if data %}
+<table>
+    <thead>
+        <tr>
+            <th>Domain Name</th>
+            <th>Organization Name</th>
+            <th>Host</th>
+            <th>First Seen</th>
+            <th>Last Seen</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.domain }}</td>
+            <td>{{ item.organizations }}</td>
+            <td>{{ item.host }}</td>
+            <td>{{ item.first_seen }}</td>
+            <td>{{ item.last_seen }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No data to display.</p>
+{% endif %}
+{% endblock %}
