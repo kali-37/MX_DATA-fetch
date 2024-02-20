@@ -1,5 +1,23 @@
       <div class="dashboard-box">
-        <h2>Dashboard</h2>
+        <p>Dashboards</p>
+        <style>
+        .dashboard-box {
+          display:grid;
+          background-color: #f9f9f9;
+          border: 1px solid #e6e6e6;
+          padding: 1em;
+          margin: 1em;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+          display:grid;
+          margin-top: 0.5em;
+          text-align: left;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+        </style> 
         <!-- Place your dashboard content here -->
         <p>Total Amount of MX Data: <span style="color: blue;">{{ dashboard_data.total_amount_of_mx_data }}</span></p>
         <p>Total Amount of Unverified Data: <span style="color: green;">{{ dashboard_data.total_amount_of_unverified_data }}</span></p>

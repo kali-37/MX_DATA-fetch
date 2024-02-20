@@ -205,17 +205,41 @@
       <br><br>
       
       <div class="dashboard-box">
-        <h2>Dashboard</h2>
+        <span class="dashboard-only">Dashboard</span>
+        <style>
+        .dashboard-only {
+          font-width:20px;
+        }
+        .dashboard-box {
+          display:grid;
+          background-color: #f9f9f9;
+          border: 1px solid #e6e6e6;
+          padding: 1em;
+          margin: 1em;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+          margin-top: 0.5em;
+          text-align: left;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+        </style> 
+
+
+
+
         <!-- Place your dashboard content here -->
         <p>Total Amount of MX Data: <span style="color: blue;">{{ dashboard_data.total_amount_of_mx_data }}</span></p>
         <p>Total Amount of NEW Unverified Data: <span style="color: green;">{{ dashboard_data.total_amount_of_new_unverified_data }}</span></p>
         <p>Total number of Domain that were Not alive: <span style="color: red;">{{ dashboard_data.total_domain_not_live }}</span></p>
         <p>Total number of Domain found alive  but mx was not found: <span style="color: orange;">{{ dashboard_data.total_domain_live_with_no_MX }}</span></p>
 
-        <a href = "{% url 'import-file' %}" class="import-section">Import FILE</a>
+        <a href = "{% url 'import-file' %}" class="import-section">&#x1F4C1</a>
         
-        <a href="{% url 'logout' %}" class="logout">Logout</a>
-        <a href="{% url 'delete' %}" class="delete">DATABASE Delete Section</a>
+        <a href="{% url 'logout' %}" class="logout">&#x23FB</a>
+        <a href="{% url 'delete' %}" class="delete">&#x1F5D1</a>
       </div>
 
     {% if context.mx_records and context.selected_month %}
