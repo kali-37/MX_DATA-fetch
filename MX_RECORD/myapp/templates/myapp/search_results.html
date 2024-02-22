@@ -4,19 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello from Export Section</title>
-    <style>
-      /* Body */
+    {% load static %}
+   <link rel="stylesheet" href="{% static "style.css" %}" >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+<nav>
+  <h3>Export By Month for Particular State and Country</h3>
+  <div class="svgs">
+  {% load static %}
+  <a href="{% url 'import-file' %}" class="import-section" data-tooltip="Import Data">
+      <img src="{% static 'svg/import_file.svg' %}" alt="Import">
+  </a>
+  <a href="{% url 'delete' %}" class="delete" data-tooltip="Delete Database">
+    <img src="{% static 'svg/delete.svg' %}" alt="Delete">
+  </a>
+  <a href="{% url 'logout' %}" class="logout" data-tooltip="logout">
+    <img src="{% static 'svg/power.svg' %}" alt="Logout">
+  </a>
+        <div>
+</nav>
+    <main>
+      <div class="search-by">
+  <form method="POST" action="{% url 'search_results' %}">
+      {% csrf_token %}
+      <label for="country-dropdown">Select Country:</label>
+      <select id="country-dropdown" class="form-control" name="country" style="width: 200px;">
+          <option value="" selected disabled>-- Select Country --</option>
+          {% for country in countries %}
+          <option value="{{ country.country_name }}">{{ country.country_name }}</option>
+          {% endfor %}
+      </select>
+      <br><br>
+      <label for="state-dropdown">Select State:</label>
+      <select id="state-dropdown" class="form-control" name="state" style="width: 200px;">
+          <option value="" selected disabled>-- Select State --</option>
+      </select>
+      <br><br>
+      <label for="month-dropdown">Select Month:</label>
+      <select id="month-dropdown" class="form-control" name="month" style="width: 200px;">
+          <option value="" selected disabled>-- Select Month --</option>
+          <option value="Jan">January</option>
+          <option value="Feb">February</option>
+          <option value="Mar">March</option>
+          <option value="Apr">April</option>
+          <option value="May">May</option>
+          <option value="Jun">June</option>
+          <option value="Jul">July</option>
+          <option value="Aug">August</option>
+          <option value="Sep">September</option>
+          <option value="Oct">October</option>
+          <option value="Nov">November</option>
+          <option value="Dec">December</option>
+      </select>
+  
+      <input type="submit" value="Search">
+  </form>
+  
+  
+      <form method="POST" action="{% url 'search_results' %}"> 
+      {% csrf_token %}
+      <br><br>
+      <label for="domain-input">(OR BY)  Domain SEARCH:</label>
+      <input type="text" id="domain-input" class="form-control" name="domain" style="width: 200px;">
+      <input type="submit" value="Search">
+      <br><br>
+</div>
+      <div class="dashboard-box">
+        <span class="dashboard-only">Dashboard</span>
+        <!-- 
+        <style>
+        .dashboard-only {
+          font-width:20px;
+        }
+        .dashboard-box {
+          display:grid;
+          background-color: #f9f9f9;
+          border: 1px solid #e6e6e6;
+          padding: 1em;
+          margin: 1em;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+          margin-top: 0.5em;
+          text-align: left;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+        </style> 
+-->
+        <!-- Place your dashboard content here -->
+<div id="dashboard-box">
+        <p>Total Amount of MX Data: <span style="color: blue;">{{ dashboard_data.total_amount_of_mx_data }}</span></p>
+        <p>Total Amount of NEW Unverified Data: <span style="color: green;">{{ dashboard_data.total_amount_of_new_unverified_data }}</span></p>
+        <p>Total number of Domain that were Not alive: <span style="color: red;">{{ dashboard_data.total_domain_not_live }}</span></p>
+        <p>Total number of Domain found alive  but mx was not found: <span style="color: orange;">{{ dashboard_data.total_domain_live_with_no_MX }}</span></p>
+      </div>
+</div>
+</main>
+<footer id="display provided">
+    {% if context.mx_records and context.selected_month %}
+    <p><a href="{% url 'search_results' %}?export=csv&selected_month={{ context.selected_month }}&selected_country={{context.selected_country}}&selected_state={{context.selected_state}}">Export to CSV</a></p>
+{% endif %}
+
+{% if context.mx_records and context.selected_month and context.selected_country and context.selected_state %}
+    <h2>MX Records</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Domain Name</th>
+          <th>Country</th>
+          <th>State</th>
+          <th>Month</th>
+          <th>Mail Servers</th>
+          <th>Organization</th>
+          <th>First Seen</th>
+          <th>Last Seen</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for mx_record in context.mx_records %}
+        {% for mail_server in mx_record.current_mail_servers.all %}
+        <tr>
+          {% if forloop.first %}
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.domain.name }}</td>
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.country }}</td>
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.state }}</td>
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.selected_month }}</td>
+          {% endif %}
+          <td>{{ mail_server.current_host }}</td>
+          <td>{{ mx_record.organizations }}</td>
+          <td>{{ mx_record.first_seen }}</td>
+          <td>{{ mx_record.last_seen }}</td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+    {% elif context.error_message %}
+    <b><p style="color: red;">Error: {{ context.error_message }}</p></b>
+
+{% endif %}
+
+
+
+{% comment %} ----------------------------------------------------------- {% endcomment %}
+
+{% comment %} {% if context.mx_records and context.historical_mail_servers %}
+    <p><a href="{% url 'search_results' %}?export=csv&selected_month={{ context.selected_month }}&selected_country={{context.country}}&selected_state={{context.state}}">Export to CSV</a></p>
+{% endif %} {% endcomment %}
+
+{% if context.mx_records and context.historical_mail_servers %}
+    <h2>All Current and Historical Records</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Domain Name</th>
+          <th>Country</th>
+          <th>State</th>
+          <th>Month</th>
+          <th>Mail Servers</th>
+          <th>Organization</th>
+          <th>First Seen</th>
+          <th>Last Seen</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for mx_record in context.mx_records %}
+        {% for mail_server in mx_record.mail_servers.all %}
+        <tr>
+          {% if forloop.first %}
+          <td rowspan="{{ mx_record.mail_servers.count }}">{{ mx_record.domain.name }}</td>
+          <td rowspan="{{ mx_record.mail_servers.count }}">{{ mx_record.country }}</td>
+          <td rowspan="{{ mx_record.mail_servers.count }}">{{ mx_record.state }}</td>
+          <td rowspan="{{ mx_record.mail_servers.count }}">{{ mx_record.selected_month }}</td>
+          {% endif %}
+          <td>{{ mail_server.host }}</td>
+          <td>{{ mx_record.organizations }}</td>
+          <td>{{ mx_record.first_seen }}</td>
+          <td>{{ mx_record.last_seen }}</td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+    {% elif context.error_message_domain %}
+   <b> <p style="color: red;">Error: {{ context.error_message_domain }}</p></b>
+
+      {% endif %}
+
+
+{% comment %} ----------------------------------------------------------------------------------- {% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            // When the country dropdown changes
+            $('#country-dropdown').change(function() {
+                // Get the selected country name
+                var countryName = $(this).val();
+                // Send a GET request to fetch the states of the selected country
+                $.get('/states/' + countryName + '/', function(states) {
+                    // Clear the current options in the state dropdown
+                    $('#state-dropdown').empty();
+                    // Add a default option to the state dropdown
+                    $('#state-dropdown').append($('<option selected disabled>').text('-- Select State --'));
+                    // Add each state of the selected country to the state dropdown
+                    $.each(states, function(index, state) {
+                        $('#state-dropdown').append($('<option>').text(state.state_name));
+                    });
+                });
+            });
+        });
+    </script>
+</footer>
+</body>
+</html>
+
+
+
+
+
+<!--
+     <style>
       body {
         background-color: #f0f0f0;
         font-family: Arial, Helvetica, sans-serif;
         color: #333;
-      }
-      
-      /* Header */
-      header {
-        background-color: #2c3e50;
-        color: #fff;
-        padding: 20px;
       }
       
       h1 {
@@ -150,230 +377,8 @@
           top: 44px;
           right: 0;
         }
-      
-        
-      </style> 
-          
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-</head>
-<body>	
-    
-  <h3>Export By Month for Particular State and Country</h3>
-  <form method="POST" action="{% url 'search_results' %}">
-      {% csrf_token %}
-      <label for="country-dropdown">Select Country:</label>
-      <select id="country-dropdown" class="form-control" name="country" style="width: 200px;">
-          <option value="" selected disabled>-- Select Country --</option>
-          {% for country in countries %}
-          <option value="{{ country.country_name }}">{{ country.country_name }}</option>
-          {% endfor %}
-      </select>
-      <br><br>
-      <label for="state-dropdown">Select State:</label>
-      <select id="state-dropdown" class="form-control" name="state" style="width: 200px;">
-          <option value="" selected disabled>-- Select State --</option>
-      </select>
-      <br><br>
-      <label for="month-dropdown">Select Month:</label>
-      <select id="month-dropdown" class="form-control" name="month" style="width: 200px;">
-          <option value="" selected disabled>-- Select Month --</option>
-          <option value="Jan">January</option>
-          <option value="Feb">February</option>
-          <option value="Mar">March</option>
-          <option value="Apr">April</option>
-          <option value="May">May</option>
-          <option value="Jun">June</option>
-          <option value="Jul">July</option>
-          <option value="Aug">August</option>
-          <option value="Sep">September</option>
-          <option value="Oct">October</option>
-          <option value="Nov">November</option>
-          <option value="Dec">December</option>
-      </select>
-  
-      <input type="submit" value="Search">
-  </form>
-  
-  
-      <form method="POST" action="{% url 'search_results' %}"> 
-      {% csrf_token %}
-      <br><br>
-      <label for="domain-input">(OR BY)  Domain SEARCH:</label>
-      <input type="text" id="domain-input" class="form-control" name="domain" style="width: 200px;">
-      <input type="submit" value="Search">
-      <br><br>
-      
-      <div class="dashboard-box">
-        <span class="dashboard-only">Dashboard</span>
-        <style>
-        .dashboard-only {
-          font-width:20px;
-        }
-        .dashboard-box {
-          display:grid;
-          background-color: #f9f9f9;
-          border: 1px solid #e6e6e6;
-          padding: 1em;
-          margin: 1em;
-          border-radius: 5px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        p {
-          margin-top: 0.5em;
-          text-align: left;
-          font-weight: 600;
-          letter-spacing: 1px;
-        }
-        </style> 
-
-
-
-
-        <!-- Place your dashboard content here -->
-        <p>Total Amount of MX Data: <span style="color: blue;">{{ dashboard_data.total_amount_of_mx_data }}</span></p>
-        <p>Total Amount of NEW Unverified Data: <span style="color: green;">{{ dashboard_data.total_amount_of_new_unverified_data }}</span></p>
-        <p>Total number of Domain that were Not alive: <span style="color: red;">{{ dashboard_data.total_domain_not_live }}</span></p>
-        <p>Total number of Domain found alive  but mx was not found: <span style="color: orange;">{{ dashboard_data.total_domain_live_with_no_MX }}</span></p>
-
-        <a href = "{% url 'import-file' %}" class="import-section">&#x1F4C1</a>
-        
-        <a href="{% url 'logout' %}" class="logout">&#x23FB</a>
-        <a href="{% url 'delete' %}" class="delete">&#x1F5D1</a>
-      </div>
-
-    {% if context.mx_records and context.selected_month %}
-    <p><a href="{% url 'search_results' %}?export=csv&selected_month={{ context.selected_month }}&selected_country={{context.selected_country}}&selected_state={{context.selected_state}}">Export to CSV</a></p>
-{% endif %}
-
-{% if context.mx_records and context.selected_month and context.selected_country and context.selected_state %}
-    <h2>MX Records</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Domain Name</th>
-          <th>Country</th>
-          <th>State</th>
-          <th>Month</th>
-          <th>Mail Servers</th>
-          <th>Organization</th>
-          <th>First Seen</th>
-          <th>Last Seen</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for mx_record in context.mx_records %}
-        {% for mail_server in mx_record.current_mail_servers.all %}
-        <tr>
-          {% if forloop.first %}
-          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.domain.name }}</td>
-          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.country }}</td>
-          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.state }}</td>
-          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.selected_month }}</td>
-          {% endif %}
-          <td>{{ mail_server.current_host }}</td>
-          <td>{{ mx_record.organizations }}</td>
-          <td>{{ mx_record.first_seen }}</td>
-          <td>{{ mx_record.last_seen }}</td>
-        </tr>
-        {% endfor %}
-        {% endfor %}
-      </tbody>
-    </table>
-    {% elif context.error_message %}
-    <b><p style="color: red;">Error: {{ context.error_message }}</p></b>
-
-{% endif %}
-
-
-
-{% comment %} ----------------------------------------------------------- {% endcomment %}
-
-{% comment %} {% if context.mx_records and context.historical_mail_servers %}
-    <p><a href="{% url 'search_results' %}?export=csv&selected_month={{ context.selected_month }}&selected_country={{context.country}}&selected_state={{context.state}}">Export to CSV</a></p>
-{% endif %} {% endcomment %}
-
-{% if context.mx_records and context.historical_mail_servers %}
-    <h2>All Current and Historical Records</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Domain Name</th>
-          <th>Country</th>
-          <th>State</th>
-          <th>Month</th>
-          <th>Mail Servers</th>
-          <th>Organization</th>
-          <th>First Seen</th>
-          <th>Last Seen</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for mx_record in context.mx_records %}
-        {% for mail_server in mx_record.mail_servers.all %}
-        <tr>
-          {% if forloop.first %}
-          <td rowspan="{{ mx_record.mail_servers.count }}">{{ mx_record.domain.name }}</td>
-          <td rowspan="{{ mx_record.mail_servers.count }}">{{ mx_record.country }}</td>
-          <td rowspan="{{ mx_record.mail_servers.count }}">{{ mx_record.state }}</td>
-          <td rowspan="{{ mx_record.mail_servers.count }}">{{ mx_record.selected_month }}</td>
-          {% endif %}
-          <td>{{ mail_server.host }}</td>
-          <td>{{ mx_record.organizations }}</td>
-          <td>{{ mx_record.first_seen }}</td>
-          <td>{{ mx_record.last_seen }}</td>
-        </tr>
-        {% endfor %}
-        {% endfor %}
-      </tbody>
-    </table>
-    {% elif context.error_message_domain %}
-   <b> <p style="color: red;">Error: {{ context.error_message_domain }}</p></b>
-
-{% endif %}
-
-
-{% comment %} ----------------------------------------------------------------------------------- {% endcomment %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-        $(document).ready(function() {
-            // When the country dropdown changes
-            $('#country-dropdown').change(function() {
-                // Get the selected country name
-                var countryName = $(this).val();
-                // Send a GET request to fetch the states of the selected country
-                $.get('/states/' + countryName + '/', function(states) {
-                    // Clear the current options in the state dropdown
-                    $('#state-dropdown').empty();
-                    // Add a default option to the state dropdown
-                    $('#state-dropdown').append($('<option selected disabled>').text('-- Select State --'));
-                    // Add each state of the selected country to the state dropdown
-                    $.each(states, function(index, state) {
-                        $('#state-dropdown').append($('<option>').text(state.state_name));
-                    });
-                });
-            });
-        });
-    </script>
-
-</body>
-</html>
-
-
-
-
+      </style>
+-->
 
 
 
