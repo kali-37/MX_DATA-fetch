@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello from Export Section</title>
     {% load static %}
-   <link rel="stylesheet" href="{% static "style.css" %}" >
+   <link rel="stylesheet" href="{% static "search_results.css" %}" >
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
@@ -73,29 +73,9 @@
 </div>
       <div class="dashboard-box">
         <span class="dashboard-only">Dashboard</span>
-        <!-- 
-        <style>
-        .dashboard-only {
-          font-width:20px;
-        }
-        .dashboard-box {
-          display:grid;
-          background-color: #f9f9f9;
-          border: 1px solid #e6e6e6;
-          padding: 1em;
-          margin: 1em;
-          border-radius: 5px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        p {
-          margin-top: 0.5em;
-          text-align: left;
-          font-weight: 600;
-          letter-spacing: 1px;
-        }
-        </style> 
--->
-        <!-- Place your dashboard content here -->
+
+
+        <!-- dashboard content here -->
 <div id="dashboard-box">
         <p>Total Amount of MX Data: <span style="color: blue;">{{ dashboard_data.total_amount_of_mx_data }}</span></p>
         <p>Total Amount of NEW Unverified Data: <span style="color: green;">{{ dashboard_data.total_amount_of_new_unverified_data }}</span></p>
@@ -198,18 +178,6 @@
 
 {% comment %} ----------------------------------------------------------------------------------- {% endcomment %}
 
-
-
-
-
-
-
-
-
-
-
-
-
     <script>
         $(document).ready(function() {
             // When the country dropdown changes
@@ -233,155 +201,3 @@
 </footer>
 </body>
 </html>
-
-
-
-
-
-<!--
-     <style>
-      body {
-        background-color: #f0f0f0;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #333;
-      }
-      
-      h1 {
-        margin: 0;
-        font-size: 36px;
-      }
-      
-      /* Search Section */
-      .search-section {
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        margin: 20px auto;
-        max-width: 800px;
-      }
-      
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-      
-      select,
-      input[type="text"] {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      
-      input[type="submit"] {
-        background-color: #2c3e50;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      
-      /* Results Section */
-      .results-section {
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        margin: 20px auto;
-        max-width: 800px;
-      }
-      
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      th,
-      td {
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ccc;
-      }
-      td:hover{
-        background-color: #f5f5f5;
-      }
-      
-      th {
-        background-color: #2c3e50;
-        color: #fff;
-      }
-      h2{
-        text-align: center;
-      }
-      
-      a {
-        float: right;
-        background-color: #ffffff;
-        color: #000000;
-        font-weight: bold;
-        border: 2px solid #00ff00;
-        padding: 10px 20px;
-      }
-      
-      a:hover {
-        background-color: #00ff00;
-        color: #ffffff;
-      }
-      .dashboard-box {
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        width: 50%;
-        height: 35vh;
-        background-color: #EAF6FF; /* Light blue background color */
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-        font-family: 'Arial', sans-serif; /* Change the font family */
-      }
-      
-      .logout, .delete {
-        /* Button styling */
-        background-color: #4C94FF; /* Blue button color */
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      .import:hover,.logout:hover{
-        background-color:#008000
-      }
-      .delete:hover {
-        background-color: #3C80DB; /* Darker blue color on hover */
-      }
-      
-      .logout {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      
-      .delete {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        background-color: #FF4C4C; /* Reddish color */
-      }
-      .import-section{
-          position: absolute;
-          top: 44px;
-          right: 0;
-        }
-      </style>
--->
-
-
-
-
-
-

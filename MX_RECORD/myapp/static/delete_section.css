@@ -1,3 +1,4 @@
+/*
 nav {
     display: flex;
     justify-content: space-between;
@@ -31,3 +32,55 @@ nav button[type="submit"] {
 nav button[type="submit"]:hover {
     background-color: #3e8e41;
 }
+*/
+
+* {
+  margin: 0;
+  padding: 10px 1px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+}
+
+.dashboard-box {
+  right: 0px;
+  background-color: #eaf6ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.delete-section input[type="submit"]:hover {
+  background-color: #c82333;
+}
+
+.delete-section input[type="submit"] {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.go-back-section a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.go-back-section a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid #333;
+  transition: background-color 0.3s ease;
+}
+
+.message {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
