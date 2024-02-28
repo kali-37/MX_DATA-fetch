@@ -12,7 +12,6 @@ from .models import UnverifiedData
 from django.shortcuts import redirect
 import time,csv,re,datetime,requests,socket
 from .models import  Domain, MXRecordAll, MailServerHistorical ,MailServercurrent,MXRecordcurrent,Country,State
-from django.core.serializers import serialize
 # from .tasks import test_func
 def logout_view(request):
     logout(request)
@@ -153,28 +152,6 @@ def get_dashboard(request):
     }
 
     return JsonResponse({'dashboard_data': dashboard_data})
-
-
-
-def get_records(request):
-    if request.method == 'POST' and request.POST.get('domain') is not None:
-        selected_domain = request.POST.get('domain')
-        mx_records = MXRecordAll.objects.filter(
-            domain__name__iexact=selected_domain,
-        )
-
-        mail_servers = MailServerHistorical.objects.filter(mx_record__in=mx_records).prefetch_related('mx_record__domain')
-        context = {
-            'mx_records': serialize('json', mx_records),
-            'historical_mail_servers': serialize('json', mail_servers),
-        }
-        if not mx_records:
-            print("no mx records ")
-            context['error_message_domain'] = f'No data found for Domain: {selected_domain}'
-
-        return JsonResponse(context, safe=False)
-
-
 
 
 # -1 = Domain is not live 

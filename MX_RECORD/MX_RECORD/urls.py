@@ -28,6 +28,8 @@ urlpatterns = [
     path("import-file/", views.import_file, name="import-file"),
     path("states/<str:country_name>/", views.get_states, name="get_states_by_country"),
     path("delete/", views.delete, name="delete"),
+    path('dashboard/', views.get_dashboard, name='dashboard'),
+    path('mxrecords/', views.get_records, name='mxrecords'),
     path(
         "delete/unverified/",
         views.delete_all_unverified_data,

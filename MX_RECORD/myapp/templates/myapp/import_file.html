@@ -86,10 +86,21 @@
 		text-decoration: none;
 	  }
 	  
+	  .dashboard{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: green;
+		color: white;
+		padding: 10px;
+		border-radius: 5px;
+		text-decoration: none;
+	  }
 	</style>
 </head>
 <body>
-	<div class="header">
+    <div class="header">
+		<a href="{% url 'search_results' %}" class="dashboard">Dashboard</a>
 		<a href="{% url 'logout' %}" class="logout">Logout</a>
 	  </div>
 	  

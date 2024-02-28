@@ -40,17 +40,18 @@
         <input type="text" name="confirm" placeholder="Type 'yes' to confirm" required>
         <input type="submit" value="Delete" class="btn btn-danger">
     </form>
-    <div class="go-back-section">
-        <a href="{% url 'search_results' %}" >Go Back</a>
-</div>
       </div>
         <div class="dashboard-box">
-            <h2>Dashboard</h2>
+      <div class="go-back-section">
+          <a href="{% url 'search_results' %}">< Go-Back </a>
+  </div>
+            <h2 class="live-count">Live Data Counting</h2>
             <!-- Place your dashboard content here -->
             <p>Total Amount of MX Data: <span style="color: blue;">{{ dashboard_data.total_amount_of_mx_data }}</span></p>
             <p>Total Amount of NEW Unverified Data: <span style="color: green;">{{ dashboard_data.total_amount_of_new_unverified_data }}</span></p>
             <p>Total number of Domain that were Not alive: <span style="color: red;">{{ dashboard_data.total_domain_not_live }}</span></p>
             <p>Total number of Domain found alive  but mx was not found: <span style="color: orange;">{{ dashboard_data.total_domain_live_with_no_MX }}</span></p>
+      <h3 class="Message-lang"> Message </h3>
       <div class="message"> 
     {% if message %}
         <p class="message">{{ message }}</p>

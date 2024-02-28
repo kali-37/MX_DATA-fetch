@@ -1,42 +1,6 @@
-/*
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-nav form {
-    display: flex;
-    align-items: center;
-}
-
-nav input[type="text"] {
-    padding: 5px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 3px;
-}
-
-nav button[type="submit"] {
-    padding: 5px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-nav button[type="submit"]:hover {
-    background-color: #3e8e41;
-}
-*/
-
 * {
   margin: 0;
-  padding: 10px 1px;
+  padding: 3px 2px;
 }
 
 body {
@@ -44,6 +8,22 @@ body {
   grid-template-columns: 0.6fr 0.4fr;
 }
 
+
+
+p {
+	padding: 5px;
+	font-size: clamp(14px,1.4vw,23px);
+}
+
+h3 {
+  padding:10px;
+  font-size : clamp(17px ,1.8vw ,28px);
+}
+
+h2 {
+  padding:10px;
+  font-size : clamp(19px ,2vw ,32px);
+}
 .dashboard-box {
   right: 0px;
   background-color: #eaf6ff;
@@ -62,21 +42,24 @@ body {
   color: #fff;
   border: none;
   padding: 8px 16px;
-  cursor: pointer;
+  cursor: pointer; } .go-back-section a:hover {
+  background-color: #059862;
+  color:#fff; 
 }
 
-.go-back-section a:hover {
-  background-color: #333;
-  color: #fff;
-}
 
 .go-back-section a {
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  border: 1px solid #333;
-  transition: background-color 0.3s ease;
+	text-decoration: none;
+	font-size: 32px;
+	/* padding: 5px 10px; */
+	border-radius: 3px;
+	transition: background-color 0.3s ease;
+	background-color: #04aa6d;
+	color: white;
+	font-weight: 700;
+	/* padding: ; */
 }
+
 
 .message {
   color: #dc3545;
@@ -84,3 +67,9 @@ body {
   margin-top: 10px;
 }
 
+.Message-lang {
+	/* padding-left: 114px; */
+	justify-content: center;
+	align-content: center;
+	display: flex;
+}

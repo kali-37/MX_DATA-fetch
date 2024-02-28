@@ -63,89 +63,17 @@
   </form>
 
 
-      <form id="form_domain" method="POST" action="{% url 'mxrecords' %}">
+      <form method="POST" action="{% url 'search_results' %}">
       {% csrf_token %}
       <br><br>
       <label for="domain-input">(OR BY)  Domain SEARCH:</label>
       <input type="text" id="domain-input" class="form-control" name="domain" style="width: 200px;">
       <input type="submit" value="Search">
       <br><br>
-      </form>
 </div>
 
-<!--
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById('form_domain').addEventListener('submit', function (event) {
-            event.preventDefault();
 
-            const formData = new FormData(document.getElementById('form_domain'));
-        console.log(formData);
 
-            fetch('{% url "mxrecords" %}', {
-                method: 'POST',
-                body: formData,
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Check for error message in the JSON response
-                if (data.error_message_domain) {
-                    // Display error message
-                    document.getElementById('result-container').innerHTML = `<p style="color: red;">Error: ${data.error_message_domain}</p>`;
-                } else {
-                    // Display the results using the provided HTML structure
-                    document.getElementById('result-container').innerHTML = `
-                        <h2>All Current and Historical Records</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Domain Name</th>
-                                    <th>Country</th>
-                                    <th>State</th>
-                                    <th>Month</th>
-                                    <th>Mail Servers</th>
-                                    <th>Organization</th>
-                                    <th>First Seen</th>
-                                    <th>Last Seen</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${generateTableRows(data.mx_records)}
-                            </tbody>
-                        </table>`;
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-        });
-
-        // Function to generate table rows from mx_records data
-        function generateTableRows(mxRecords) {
-            // Implement this function based on your data structure
-            // You can iterate over mxRecords and generate the rows
-            // This is a simplified example, adjust as per your data structure
-            let rows = '';
-            mxRecords.forEach(mxRecord => {
-                mxRecord.mail_servers.forEach(mailServer => {
-                    rows += `
-                        <tr>
-                            <td>${mxRecord.domain.name}</td>
-                            <td>${mxRecord.country}</td>
-                            <td>${mxRecord.state}</td>
-                            <td>${mxRecord.selected_month}</td>
-                            <td>${mailServer.host}</td>
-                            <td>${mxRecord.organizations}</td>
-                            <td>${mxRecord.first_seen}</td>
-                            <td>${mxRecord.last_seen}</td>
-                        </tr>`;
-                });
-            });
-            return rows;
-        }
-    });
-</script>
--->
       <div class="dashboard-box">
         <span class="dashboard-only">Dashboard</span>
 
@@ -164,10 +92,45 @@
     <p><a href="{% url 'search_results' %}?export=csv&selected_month={{ context.selected_month }}&selected_country={{context.selected_country}}&selected_state={{context.selected_state}}">Export to CSV</a></p>
 {% endif %}
 
+{% if context.mx_records and context.selected_month and context.selected_country and context.selected_state %}
+    <h2>MX Records</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Domain Name</th>
+          <th>Country</th>
+          <th>State</th>
+          <th>Month</th>
+          <th>Mail Servers</th>
+          <th>Organization</th>
+          <th>First Seen</th>
+          <th>Last Seen</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for mx_record in context.mx_records %}
+        {% for mail_server in mx_record.current_mail_servers.all %}
+        <tr>
+          {% if forloop.first %}
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.domain.name }}</td>
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.country }}</td>
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.state }}</td>
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.selected_month }}</td>
+          {% endif %}
+          <td>{{ mail_server.current_host }}</td>
+          <td>{{ mx_record.organizations }}</td>
+          <td>{{ mx_record.first_seen }}</td>
+          <td>{{ mx_record.last_seen }}</td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+    {% elif context.error_message %}
+    <b><p style="color: red;">Error: {{ context.error_message }}</p></b>
 
-<div id="result-container">
-    <!-- Display the results or error message here -->
-</div>
+{% endif %}
+
 
 
 {% comment %} ----------------------------------------------------------- {% endcomment %}

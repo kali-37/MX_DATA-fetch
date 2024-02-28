@@ -50,7 +50,8 @@ nav {
 main {
   margin: 10px 5px;
   display: grid;
-  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-columns: 0.9fr auto;
+  gap: clamp(3px, 0.5vw, 5px);
   /* align-items:center; */
 }
 
@@ -83,7 +84,7 @@ main {
   line-height: 2;
 }
 
-/* 
+/*
 
 
 
@@ -140,7 +141,7 @@ p span {
 }
 
 /* Results Section */
-.results-section {
+.result-container{
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -153,6 +154,7 @@ p span {
 table {
   border-collapse: collapse;
   width: 100%;
+  font-size: clamp(3px,1.2vw,17px);
 }
 
 th,
@@ -160,6 +162,7 @@ td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ccc;
+  padding: clamp(2px,1.2vw,10px);
 }
 td:hover {
   background-color: #f5f5f5;
@@ -172,4 +175,3 @@ th {
 h2 {
   text-align: center;
 }
-
