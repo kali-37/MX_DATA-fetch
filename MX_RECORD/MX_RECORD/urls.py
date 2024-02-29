@@ -29,7 +29,8 @@ urlpatterns = [
     path("states/<str:country_name>/", views.get_states, name="get_states_by_country"),
     path("delete/", views.delete, name="delete"),
     path('dashboard/', views.get_dashboard, name='dashboard'),
-    path('mxrecords/', views.get_records, name='mxrecords'),
+    # path('mxrecords/', views.get_records, name='mxrecords'),
+    path('dashboardexport', views.export_dashboard, name='fetch_dashboard'),
     path(
         "delete/unverified/",
         views.delete_all_unverified_data,
@@ -37,7 +38,7 @@ urlpatterns = [
     ),
     path(
         "delete/domain-not-live/",
-        views.delete_all_domain_not_live_data,
+            views.delete_all_domain_not_live_data,
         name="delete_all_domain_not_live_data",
     ),
     path(

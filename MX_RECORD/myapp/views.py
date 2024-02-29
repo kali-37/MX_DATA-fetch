@@ -12,7 +12,6 @@ from .models import UnverifiedData
 from django.shortcuts import redirect
 import time,csv,re,datetime,requests,socket
 from .models import  Domain, MXRecordAll, MailServerHistorical ,MailServercurrent,MXRecordcurrent,Country,State
-from django.core.serializers import serialize
 # from .tasks import test_func
 def logout_view(request):
     logout(request)
@@ -155,26 +154,54 @@ def get_dashboard(request):
     return JsonResponse({'dashboard_data': dashboard_data})
 
 
+def export_dashboard(request):
+    print("aayo",request.method,request.GET.get('export'),request.GET.get('selected_query'))
+    if request.method == 'GET' and request.GET.get('export') == 'csv' and request.GET.get('selected_query') is not None :
+        selected_query = request.GET.get('selected_query')
+        if selected_query=="total_amount_of_mx_data":
+            response = HttpResponse(content_type='text/csv')
+            response['Content-Disposition'] = f'attachment; filename="{selected_query}.csv"'
+            
+            writer = csv.writer(response)
+            writer.writerow(["Domains Whose MX records was Found"])
+            total_amount_of_mx_data=Domain.objects.all()
+            for record in total_amount_of_mx_data:
+                writer.writerow([record.name])
+        else:
+            response = HttpResponse(content_type='text/csv')
+            response['Content-Disposition'] = f'attachment; filename="{selected_query}.csv"'
+            
+            writer = csv.writer(response)
+            writer.writerow(['Company Name' , 'Contact Person' , 'Address ', 'City ' , 'Pin' ,'Country' ,'State', 'LandLine No','Mobile No','Email Id','Website'])
+            records=None
 
-def get_records(request):
-    if request.method == 'POST' and request.POST.get('domain') is not None:
-        selected_domain = request.POST.get('domain')
-        mx_records = MXRecordAll.objects.filter(
-            domain__name__iexact=selected_domain,
-        )
+            if selected_query=='total_amount_of_new_unverified_data':
+                records=UnverifiedData.objects.exclude(s_no__in=[-1, -2,-3])
 
-        mail_servers = MailServerHistorical.objects.filter(mx_record__in=mx_records).prefetch_related('mx_record__domain')
-        context = {
-            'mx_records': serialize('json', mx_records),
-            'historical_mail_servers': serialize('json', mail_servers),
-        }
-        if not mx_records:
-            print("no mx records ")
-            context['error_message_domain'] = f'No data found for Domain: {selected_domain}'
-
-        return JsonResponse(context, safe=False)
+            if selected_query=='total_domain_not_live':
+                records =UnverifiedData.objects.filter(s_no=-1)
 
 
+            if selected_query=='total_domain_live_with_no_MX':
+                records =UnverifiedData.objects.filter(s_no=-2)
+
+            if records:
+                for record in records:
+                        writer.writerow([
+                        record.company_name,
+                        record.contact_person,
+                        record.address,
+                        record.city,
+                        record.pin,
+                        record.country,
+                        record.state,
+                        record.landline_no,
+                        record.mobile_no,
+                        record.email_id,
+                        record.website
+                        ])
+
+        return response
 
 
 # -1 = Domain is not live 
@@ -226,7 +253,7 @@ def search_results(request):
             selected_month__iexact=selected_month, 
             country__iexact=selected_country, 
             state__iexact=selected_state
-        ) 
+        ).limit(10) 
         mail_servers = MailServercurrent.objects.filter(current_mx__in=mx_records).prefetch_related('current_mx__domain')
         context = { 
             'mx_records': mx_records,
@@ -239,7 +266,7 @@ def search_results(request):
             context = {
                 'error_message': f'No data found for COUNTRY: {selected_country} - STATE: {selected_state}- MONTH:{selected_month}'
             }
-        return render(request, 'search_results.html', {'countries': countries, 'states': states,'context':context,'dashboard_data':dashboard_data})
+        return render(request, 'export_file.html', {'context':context})
     
 
     if request.method == 'GET' and request.GET.get('export') == 'csv' and request.GET.get('selected_month') is not None and request.GET.get('selected_country') is not None and request.GET.get("selected_state") is not None:

@@ -27,7 +27,7 @@
 </nav>
     <main>
       <div class="search-by">
-  <form method="POST" action="{% url 'search_results' %}">
+  <form method="POST" action="{% url 'search_results' %}" target="_blank" >
       {% csrf_token %}
       <label for="country-dropdown">Select Country:</label>
       <select id="country-dropdown" class="form-control" name="country" style="width: 200px;">
@@ -63,112 +63,48 @@
   </form>
 
 
-      <form id="form_domain" method="POST" action="{% url 'mxrecords' %}">
+      <form method="POST" action="{% url 'search_results' %}">
       {% csrf_token %}
       <br><br>
       <label for="domain-input">(OR BY)  Domain SEARCH:</label>
       <input type="text" id="domain-input" class="form-control" name="domain" style="width: 200px;">
       <input type="submit" value="Search">
       <br><br>
-      </form>
 </div>
 
-<!--
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById('form_domain').addEventListener('submit', function (event) {
-            event.preventDefault();
 
-            const formData = new FormData(document.getElementById('form_domain'));
-        console.log(formData);
 
-            fetch('{% url "mxrecords" %}', {
-                method: 'POST',
-                body: formData,
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Check for error message in the JSON response
-                if (data.error_message_domain) {
-                    // Display error message
-                    document.getElementById('result-container').innerHTML = `<p style="color: red;">Error: ${data.error_message_domain}</p>`;
-                } else {
-                    // Display the results using the provided HTML structure
-                    document.getElementById('result-container').innerHTML = `
-                        <h2>All Current and Historical Records</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Domain Name</th>
-                                    <th>Country</th>
-                                    <th>State</th>
-                                    <th>Month</th>
-                                    <th>Mail Servers</th>
-                                    <th>Organization</th>
-                                    <th>First Seen</th>
-                                    <th>Last Seen</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${generateTableRows(data.mx_records)}
-                            </tbody>
-                        </table>`;
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-        });
-
-        // Function to generate table rows from mx_records data
-        function generateTableRows(mxRecords) {
-            // Implement this function based on your data structure
-            // You can iterate over mxRecords and generate the rows
-            // This is a simplified example, adjust as per your data structure
-            let rows = '';
-            mxRecords.forEach(mxRecord => {
-                mxRecord.mail_servers.forEach(mailServer => {
-                    rows += `
-                        <tr>
-                            <td>${mxRecord.domain.name}</td>
-                            <td>${mxRecord.country}</td>
-                            <td>${mxRecord.state}</td>
-                            <td>${mxRecord.selected_month}</td>
-                            <td>${mailServer.host}</td>
-                            <td>${mxRecord.organizations}</td>
-                            <td>${mxRecord.first_seen}</td>
-                            <td>${mxRecord.last_seen}</td>
-                        </tr>`;
-                });
-            });
-            return rows;
-        }
-    });
-</script>
--->
       <div class="dashboard-box">
         <span class="dashboard-only">Dashboard</span>
 
 
         <!-- dashboard content here -->
 <div id="dashboard-box">
-        <p>Total Amount of MX Data: <span  id="total_amount_of_mx_data" style="color: blue;">{{ dashboard_data.total_amount_of_mx_data }}</span></p>
-        <p>Total Amount of NEW Unverified Data: <span id="total_amount_of_new_unverified_data" style="color: green;">{{ dashboard_data.total_amount_of_new_unverified_data }}</span></p>
-        <p>Total number of Domain that were Not alive: <span id="total_domain_not_live" style="color: red;">{{ dashboard_data.total_domain_not_live }}</span></p>
-        <p>Total number of Domain found alive  but mx was not found: <span id="total_domain_live_with_no_MX" style="color: orange;">{{ dashboard_data.total_domain_live_with_no_MX }}</span></p>
+        <p>Total Amount of MX Data: <span>
+            <a  id="total_amount_of_mx_data"    style="color: blue; "href="{% url 'fetch_dashboard' %}?export=csv&selected_query=total_amount_of_mx_data" target="_blank" >
+            {{ dashboard_data.total_amount_of_mx_data }}
+              </a>
+          </span></p>
+        <p>Total Amount of NEW Unverified Data: <span >
+            <a  id="total_amount_of_new_unverified_data" style="color: green;" href="{% url 'fetch_dashboard' %}?export=csv&selected_query=total_amount_of_new_unverified_data" target="_blank" >
+            {{ dashboard_data.total_amount_of_new_unverified_data }}
+              </a>
+          </span></p>
+        <p>Total number of Domain that were Not alive: <span >
+            <a  id="total_domain_not_live"  style="color: red;" href="{% url 'fetch_dashboard' %}?export=csv&selected_query=total_domain_not_live" target="_blank" >
+            {{ dashboard_data.total_domain_not_live }}
+              </a>
+          </span></p>
+
+        <p>Total number of Domain found alive  but mx was not found: <span > 
+            <a  id="total_domain_live_with_no_MX"  style="color: orange;" href="{% url 'fetch_dashboard' %}?export=csv&selected_query=total_domain_live_with_no_MX" target="_blank" >
+            {{ dashboard_data.total_domain_live_with_no_MX }}
+              </a>
+          </span></p>
       </div>
 </div>
 </main>
 <footer id="display provided">
-    {% if context.mx_records and context.selected_month %}
-    <p><a href="{% url 'search_results' %}?export=csv&selected_month={{ context.selected_month }}&selected_country={{context.selected_country}}&selected_state={{context.selected_state}}">Export to CSV</a></p>
-{% endif %}
-
-
-<div id="result-container">
-    <!-- Display the results or error message here -->
-</div>
-
 
 {% comment %} ----------------------------------------------------------- {% endcomment %}
 

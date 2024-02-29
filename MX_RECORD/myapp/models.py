@@ -2,7 +2,7 @@ from django.db import models
 
 
 class UnverifiedData(models.Model):
-    s_no = models.IntegerField(default=1)
+    s_no = models.IntegerField(default=1, db_index=True)
     company_name = models.CharField(max_length=200)
     contact_person = models.CharField(max_length=100)
     address = models.CharField(max_length=254)
@@ -56,6 +56,10 @@ class MXRecordcurrent(models.Model):
 
     def __str__(self):
         return f"{self.domain} ({self.first_seen} - {self.last_seen})"
+    class Meta:
+        indexes = [
+            models.Index(fields=['selected_month', 'country', 'state']),
+        ]
 
 
 class MailServerHistorical(models.Model):

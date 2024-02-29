@@ -1,31 +1,75 @@
-{% extends 'search_results.html' %} 
 
-{% block content %}
-<h1>Data Export</h1>
-{% if data %}
-<table>
-    <thead>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello from Export Section</title>
+    {% load static %}
+   <link rel="stylesheet" href="{% static "search_results.css" %}" >
+
+</head>
+<body>
+<footer id="display provided">
+
+{% if context.mx_records and context.selected_month %}
+    <div style="margin-top: 5px; text-align:left;">
+        <p style="font-size: 2vw; margin-bottom: 3px; ">
+            <a href="{% url 'search_results' %}?export=csv&selected_month={{ context.selected_month }}&selected_country={{context.selected_country}}&selected_state={{context.selected_state}}" 
+               style="color: #3498db; text-decoration: none; font-weight: bold;">
+<i class="fas fa-file-csv" style="margin-left: 3px;" ></i><span style="border: 2px solid black;"> Download as CSV </span>
+
+            </a>
+        </p>
+    </div>
+{% endif %}
+
+
+{% if context.mx_records and context.selected_month and context.selected_country and context.selected_state %}
+      <h2 style="font-family: 'Arial', sans-serif; text-align: center; color: #333; font-size: 2vw; ">
+    less than  10 sample  MX Records for 
+    <span style="color: #e44d26;">{{ context.selected_country }}</span>
+    &rarr;
+    <span style="color: #3498db;">{{ context.selected_state }}</span> 
+    &rarr; {{ context.selected_month }}
+</h2>
+
+    <table>
+      <thead>
         <tr>
-            <th>Domain Name</th>
-            <th>Organization Name</th>
-            <th>Host</th>
-            <th>First Seen</th>
-            <th>Last Seen</th>
+          <th>Domain Name</th>
+          <th>Country</th>
+          <th>State</th>
+          <th>Month</th>
+          <th>Mail Servers</th>
+          <th>Organization</th>
+          <th>First Seen</th>
+          <th>Last Seen</th>
         </tr>
-    </thead>
-    <tbody>
-        {% for item in data %}
+      </thead>
+      <tbody>
+        {% for mx_record in context.mx_records %}
+        {% for mail_server in mx_record.current_mail_servers.all %}
         <tr>
-            <td>{{ item.domain }}</td>
-            <td>{{ item.organizations }}</td>
-            <td>{{ item.host }}</td>
-            <td>{{ item.first_seen }}</td>
-            <td>{{ item.last_seen }}</td>
+          {% if forloop.first %}
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.domain.name }}</td>
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.country }}</td>
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.state }}</td>
+          <td rowspan="{{ mx_record.current_mail_servers.count }}">{{ mx_record.selected_month }}</td>
+          {% endif %}
+          <td>{{ mail_server.current_host }}</td>
+          <td>{{ mx_record.organizations }}</td>
+          <td>{{ mx_record.first_seen }}</td>
+          <td>{{ mx_record.last_seen }}</td>
         </tr>
         {% endfor %}
-    </tbody>
-</table>
-{% else %}
-<p>No data to display.</p>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% elif context.error_message %}
+    <b><p style="color: red;">Error: {{ context.error_message }}</p></b>
+
 {% endif %}
-{% endblock %}
+</body>
+  </html>
