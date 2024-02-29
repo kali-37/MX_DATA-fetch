@@ -253,7 +253,7 @@ def search_results(request):
             selected_month__iexact=selected_month, 
             country__iexact=selected_country, 
             state__iexact=selected_state
-        ).limit(10) 
+        )[:10] 
         mail_servers = MailServercurrent.objects.filter(current_mx__in=mx_records).prefetch_related('current_mx__domain')
         context = { 
             'mx_records': mx_records,
