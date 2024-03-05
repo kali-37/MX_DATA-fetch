@@ -1,3 +1,5 @@
 .venv
 MX_RECORD/myapp/__pycache__/
 MX_RECORD/MX_RECORD/__pycache__/
+MX_RECORD/myapp/views.py 
+MX_RECORD/myapp/views.py.back2
